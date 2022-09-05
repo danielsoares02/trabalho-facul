@@ -1,0 +1,11 @@
+a {
+    color: unset;
+}
+
+.navbar {
+    height: 100px;
+}
+
+.navbar .nav-tabs {
+    width: 100%;
+}
