@@ -1,25 +1,32 @@
+<!-- Barra de navegação superior, contendo os links para as demais páginas -->
 <nav class="navbar navbar-expand-lg bg-light">
+
+    <!-- O "routerLink" de cada link indica a página que será direcionada e o "routerLinkActive" ativa determinado css quando a url está acessada, no caso está ativando o css "active" do bootstrap -->
     <ul class="nav nav-tabs">
 
         <li class="nav-item">
+            <!-- Link para a página "Sobre mim" -->
             <a class="nav-link" routerLink="about" routerLinkActive="active">
                 Sobre mim
             </a>
         </li>
 
         <li class="nav-item">
+            <!-- Link para a página "Formação"  -->
             <a class="nav-link" routerLink="formation" routerLinkActive="active">
                 Formação
             </a>
         </li>
 
         <li class="nav-item">
+            <!-- Link para a página "Portfóio" -->
             <a class="nav-link" routerLink="portfolio" routerLinkActive="active">
                 Portfólio
             </a>
         </li>
         
         <li class="nav-item">
+            <!-- Link para a página "Contato" -->
             <a class="nav-link" routerLink="contact" routerLinkActive="active">
                 Contato
             </a>
@@ -29,4 +36,7 @@
     
 </nav>
 
-<router-outlet></router-outlet>
+<!-- Aqui é onde as demais páginas são carregadas -->
+<div class="content">
+    <router-outlet></router-outlet>
+</div>

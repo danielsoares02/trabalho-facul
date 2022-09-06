@@ -1,1 +1,30 @@
-Formation OK
+<!-- Apresenta o meu e-mail -->
+<p>Meu email: {{email}} </p>
+
+<!-- Cria um form para abrir o client padrão de email configurado no windows
+A requisição feita por este form será via GET com o formato: 
+mailto:danielsoares28@hotmail.com?subject=assunto_informado_pelo_usuario&body=mensagem_informada_pelo_usuario -->
+<form action="mailto:{{email}}" method="GET" enctype="text/plain" name="EmailForm">
+    <div class="card card-send-mail">
+        <div class="card-header">
+            Envie-me um email:
+        </div>
+
+        <div class="card-body">
+
+            <!-- Assunto que será enviado no email -->
+            <label for="subject">Assunto:</label>
+            <input type="text" class="form-control" id="subject" name="subject">
+
+            <!-- Corpo da mensagem que será enviada no e-mail -->
+            <label for="body">Mensagem:</label>
+            <textarea class="form-control" id="body" name="body" rows="6" cols="20"></textarea>
+
+        </div>
+
+        <div class="card-footer text-end">
+            <!-- Botão que dispara o envio do formulário -->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </div>    
+</form>

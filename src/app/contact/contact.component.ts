@@ -13,5 +13,6 @@ import { RouterModule } from "@angular/router";
     styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-    
+    // Meu e-mail, utilizado no html
+    email = "danielsoares28@hotmail.com"
 }
